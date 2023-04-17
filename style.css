@@ -1,0 +1,121 @@
+:root {
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+
+    --font-family: 'Red Hat Display', sans-serif;
+
+    --weight-medium: 500;
+    --weight-bold: 700;
+    --weight-black: 900;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: var(--pale-blue);
+    background-image: url(images/pattern-background-desktop.svg);
+    color: var(--desaturated-blue);
+    font-family: var(--font-family);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: #fff;
+    width: 400px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 3px 6px 20px -10px var(--desaturated-blue), 0px 5px 10px 3px rgba(0,0,0,0);
+    margin-bottom: 60px;
+}
+
+.card > img {
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+h1 {
+    margin: 20px;
+    font-size: 1.6rem;
+    font-weight: var(--weight-black);
+    color: var(--dark-blue);
+}
+
+p {
+    margin: 20px;
+}
+
+.rectangle {
+    background-color: var(--very-pale-blue);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 40px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.rectangle img {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+}
+
+.rectangle h2 {
+    color: var(--dark-blue);
+    font-size: 1rem;
+    font-weight: var(--weight-black);
+}
+
+.rectangle p {
+    margin: 6px 0 0;
+    font-size: 0.9rem;
+}
+
+.summary {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.rectangle a {
+    color: var(--bright-blue);
+    font-weight: var(--weight-black);
+    font-size: 0.8rem;
+}
+
+button {
+    width: 80%;
+    margin: auto;
+    display: block;
+    background-color: var(--bright-blue);
+    color: #fff;
+    font-weight: var(--weight-black);
+    border: none;
+    padding: 13px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px -3px var(--bright-blue), 0px 5px 10px 3px rgba(0,0,0,0);
+}
+
+.card > a {
+    text-decoration: none;
+    display: block;
+    margin: 20px;
+    font-weight: var(--weight-black);
+    font-size: 0.9rem;
+    color: var(--desaturated-blue);
+}
