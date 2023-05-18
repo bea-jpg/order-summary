@@ -98,6 +98,10 @@ p {
     font-size: 0.8rem;
 }
 
+.rectangle a:hover {
+    color: hsl(245, 71%, 72%);
+}
+
 button {
     width: 80%;
     margin: auto;
@@ -111,6 +115,10 @@ button {
     box-shadow: 0px 4px 10px -3px var(--bright-blue), 0px 5px 10px 3px rgba(0,0,0,0);
 }
 
+button:hover {
+    background-color: hsl(245, 71%, 65%);
+}
+
 .card > a {
     text-decoration: none;
     display: block;
@@ -118,4 +126,20 @@ button {
     font-weight: var(--weight-black);
     font-size: 0.9rem;
     color: var(--desaturated-blue);
+}
+
+.card > a:hover {
+    color: var(--dark-blue)
+}
+
+/* Mobile */
+
+@media screen and (max-width: 415px){
+    .card {
+        width: 95%;
+    }
+
+    .rectangle {
+        margin: 20px 10px;
+    }
 }
